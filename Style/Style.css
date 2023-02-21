@@ -1,0 +1,92 @@
+html body {
+  margin: 0;
+  background-color: rgb(222, 235, 239);
+}
+
+.book {
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+  animation: 
+        go-smaller /*Name*/
+        2s         /*Duration*/
+        0.6s       /*Delay*/
+        1          /*Iteration-count*/
+        normal     /*Direction*/
+        forwards;  /*Fill-mode*/
+}
+
+.go-higher-class {
+  background-color: white;
+  margin: 30vh auto auto auto;
+  width: 160px;
+  height: 220px;
+  animation: 
+        go-higher  /*Name*/
+        2s         /*Duration*/
+        0s       /*Delay*/
+        1          /*Iteration-count*/
+        normal     /*Direction*/
+        forwards;  /*Fill-mode*/
+}
+
+.go-smaller-class {
+  background-color: white;
+  margin: 0 auto auto auto;
+  height: 100vh;
+  width: 100vw;
+  animation: 
+        go-smaller /*Name*/
+        2s         /*Duration*/
+        0s       /*Delay*/
+        1          /*Iteration-count*/
+        normal     /*Direction*/
+        forwards;  /*Fill-mode*/
+}
+
+.to-visible {
+  animation: 
+        to-visible /*Name*/
+        0.5s       /*Duration*/
+        0s       /*Delay*/
+        1          /*Iteration-count*/
+        normal     /*Direction*/
+        forwards;  /*Fill-mode*/
+}
+
+.book > span {
+  opacity: 0;
+  animation: 
+        hide-text  /*Name*/
+        2s         /*Duration*/
+        0.7s       /*Delay*/
+        1          /*Iteration-count*/
+        normal     /*Direction*/
+        forwards;  /*Fill-mode*/
+        
+}
+
+.center {
+  text-align: center;
+}
+
+.sync-first-element {
+    padding: 0px;
+    margin: 0px;
+    line-height: 100%;
+}
+
+.hyperlink {
+  text-decoration: underline;
+  cursor: pointer;
+  color: rgb(86, 27, 139);
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.hyperlink:active {
+  color: red;
+}
